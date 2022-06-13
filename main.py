@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sklearn
 
-filename = "C:\\Users\\ergou\\PycharmProjects\\Data_analysis_report\\concrete_data.csv"
+filename = "concrete_data.csv"
 df = pd.read_csv(filename)
 
 
@@ -15,7 +15,7 @@ def main():
         "Concrete is the most important material in civil engineering. The concrete compressive strength is a highly nonlinear function of age and ingredients. These ingredients include cement, blast furnace slag, fly ash,water, superplasticizer, coarse aggregate, and fine aggregate.")
     st.write(
         "From the following Report our **Goal** is to evaluate the *dataset* step by step and see if I should add how much of what part to the mixture so that it increases the strength of the mixture and the materials are not also wasted")
-    filename = "C:\\Users\\ergou\\PycharmProjects\\Data_analysis_report\\concrete_data.csv"
+    filename = "concrete_data.csv"
     df = pd.read_csv(filename)
     st.write(df)
     st.header("Introduction")
@@ -77,7 +77,7 @@ def main():
     st.write("how to create a mixture with best propersonate?"
              "for such working we are using machine learning algorithm and have created a model ")
 
-    model="C:\\Users\\ergou\\PycharmProjects\\Data_analysis_report\\finalized_model.sav"
+    model="finalized_model.sav"
     loaded_model = joblib.load(model)
 
     st.write("enter details to check the strength of your mixture")
